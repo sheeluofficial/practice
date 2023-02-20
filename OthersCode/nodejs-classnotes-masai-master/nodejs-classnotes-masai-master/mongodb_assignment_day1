@@ -1,0 +1,189 @@
+     ////   Mongo Db Assignment Feb-1 2022, fw14_527 , Abhishek Maurya   ////
+
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+> 
+> 
+> 
+> 
+> use assignments
+switched to db assignments
+> 
+> 
+> 
+> 
+> db
+assignments
+>
+> db.createCollection('users')
+{ "ok" : 1 }
+> 
+> 
+> db.users.insert({"first_name": "Abhishek", "last_name": "Maurya", "email":"abc@gmail.com", "gender": "Male", "ip":1233456, "age": 22})
+WriteResult({ "nInserted" : 1 })
+
+
+
+db.users.insertMany([{ "first_name": "Abhishek", "last_name": "Singh", "email":"abdefdc@gmail.com", "gender": "Male", "ip":13242456, "age": 25},{"first_name": "Siri", "last_name": "V", "email":"siri@gmail.com", "gender": "Female", "ip":123233456, "age": 24},{ "first_name": "Ankit", "last_name": "Yadav", "email":"qwabc@gmail.com", "gender": "Male", "ip":12332456, "age": 12},{ "first_name": "Aditi", "last_name": "Maurya", "email":"aditi@gmail.com", "gender": "Female", "ip":111233456, "age": 29}  ])
+{
+	"acknowledged" : true,
+	"insertedIds" : [
+		ObjectId("61f95ba897ec7034ae778ba2"),
+		ObjectId("61f95ba897ec7034ae778ba3"),
+		ObjectId("61f95ba897ec7034ae778ba4"),
+		ObjectId("61f95ba897ec7034ae778ba5")
+	]
+}
+
+> db.users.insertMany([{ "first_name": "Anubhav", "last_name": "Singh", "email":"abdefdc@gmail.com", "gender": "Male", "ip":13242456, "age": 25},{"first_name": "Stuti", "last_name": "V", "email":"stuti@gmail.com", "gender": "Female", "ip":123233456, "age": 44},{ "first_name": "Atul", "last_name": "Yadav", "email":"qwabc@gmail.com", "gender": "Male", "ip":12332456, "age": 32},{ "first_name": "Amie", "last_name": "Maurya", "email":"aditi@gmail.com", "gender": "Female", "ip":111233456, "age": 39}  ])
+{
+	"acknowledged" : true,
+	"insertedIds" : [
+		ObjectId("61f95cb797ec7034ae778ba6"),
+		ObjectId("61f95cb797ec7034ae778ba7"),
+		ObjectId("61f95cb797ec7034ae778ba8"),
+		ObjectId("61f95cb797ec7034ae778ba9")
+	]
+}
+> 
+
+
+ 
+> db.users.find({}).pretty()
+{
+	"_id" : ObjectId("61f959f397ec7034ae778ba1"),
+	"first_name" : "Abhishek",
+	"last_name" : "Maurya",
+	"email" : "abc@gmail.com",
+	"gender" : "Male",
+	"ip" : 1233456,
+	"age" : 22
+}
+{
+	"_id" : ObjectId("61f95ba897ec7034ae778ba2"),
+	"first_name" : "Abhishek",
+	"last_name" : "Singh",
+	"email" : "abdefdc@gmail.com",
+	"gender" : "Male",
+	"ip" : 13242456,
+	"age" : 25
+}
+{
+	"_id" : ObjectId("61f95ba897ec7034ae778ba3"),
+	"first_name" : "Siri",
+	"last_name" : "V",
+	"email" : "siri@gmail.com",
+	"gender" : "Female",
+	"ip" : 123233456,
+	"age" : 24
+}
+{
+	"_id" : ObjectId("61f95ba897ec7034ae778ba4"),
+	"first_name" : "Ankit",
+	"last_name" : "Yadav",
+	"email" : "qwabc@gmail.com",
+	"gender" : "Male",
+	"ip" : 12332456,
+	"age" : 12
+}
+{
+	"_id" : ObjectId("61f95ba897ec7034ae778ba5"),
+	"first_name" : "Aditi",
+	"last_name" : "Maurya",
+	"email" : "aditi@gmail.com",
+	"gender" : "Female",
+	"ip" : 111233456,
+	"age" : 29
+}
+{
+	"_id" : ObjectId("61f95cb797ec7034ae778ba6"),
+	"first_name" : "Anubhav",
+	"last_name" : "Singh",
+	"email" : "abdefdc@gmail.com",
+	"gender" : "Male",
+	"ip" : 13242456,
+	"age" : 25
+}
+{
+	"_id" : ObjectId("61f95cb797ec7034ae778ba7"),
+	"first_name" : "Stuti",
+	"last_name" : "V",
+	"email" : "stuti@gmail.com",
+	"gender" : "Female",
+	"ip" : 123233456,
+	"age" : 44
+}
+{
+	"_id" : ObjectId("61f95cb797ec7034ae778ba8"),
+	"first_name" : "Atul",
+	"last_name" : "Yadav",
+	"email" : "qwabc@gmail.com",
+	"gender" : "Male",
+	"ip" : 12332456,
+	"age" : 32
+}
+{
+	"_id" : ObjectId("61f95cb797ec7034ae778ba9"),
+	"first_name" : "Amie",
+	"last_name" : "Maurya",
+	"email" : "aditi@gmail.com",
+	"gender" : "Female",
+	"ip" : 111233456,
+	"age" : 39
+}
+> 
+
+> db.users.findOne({})
+{
+	"_id" : ObjectId("61f959f397ec7034ae778ba1"),
+	"first_name" : "Abhishek",
+	"last_name" : "Maurya",
+	"email" : "abc@gmail.com",
+	"gender" : "Male",
+	"ip" : 1233456,
+	"age" : 22
+}
+> 
+> db.users.findOne({"first_name":"Atul"})
+{
+	"_id" : ObjectId("61f95cb797ec7034ae778ba8"),
+	"first_name" : "Atul",
+	"last_name" : "Yadav",
+	"email" : "qwabc@gmail.com",
+	"gender" : "Male",
+	"ip" : 12332456,
+	"age" : 32
+}
+> 
+ 
+> db.users.update({"first_name":"Atul"}, {$set: {"mid_name": "Kumar"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> 
+>
+> db.users.updateMany({"last_name": "Singh"},{$set : {"religion":  "hindu"}})
+{ "acknowledged" : true, "matchedCount" : 2, "modifiedCount" : 2 }
+> 
+> db.users.remove({"religion":"hindu"},1)
+WriteResult({ "nRemoved" : 1 })
+> 
+> db.users.deleteOne({"gender" : "Male"})
+{ "acknowledged" : true, "deletedCount" : 1 }
+> 
+> 
+> db.users.deleteMany({"gender": "Female"})
+{ "acknowledged" : true, "deletedCount" : 4 }
+> 
+
+> 
+> db.dropDatabase()
+{ "ok" : 1 }
+> 
+> 
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+> 
+

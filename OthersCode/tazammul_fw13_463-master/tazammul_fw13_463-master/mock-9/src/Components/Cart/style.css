@@ -1,0 +1,45 @@
+
+#data-cont-main{
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+    padding: 20px 20px;
+    gap: 20px;
+}
+
+
+#otp{
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: 400px;
+    background: grey;
+    color: white;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;;
+}
+#otp input{
+    background: white;
+}
+#cross{
+    width: 30px !important;
+    height: 30px !important;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    cursor: pointer;
+}
+#edit
+{
+    display: flex;
+    gap: 20px;
+    border: 2px solid black;
+    justify-content: space-between;
+    padding: 0px 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,72 @@
+#LoginSignup
+{
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#LoginSignup img
+{
+    margin-bottom: 30px;
+}
+#LoginSignup div
+{
+    padding: 20px;
+    box-sizing: border-box;
+}
+#LoginSignup h1{
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+#LoginSignup input
+{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #CFD4D9;
+}
+#LoginSignup a{
+    text-decoration: underline;
+}
+#LoginSignup input::placeholder
+{
+    color: #CFD4D9;
+}
+#LoginSignup p{
+    text-align: left;
+    font-size: 1.3vw;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#LoginSignup #policy
+{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1vw;
+    color: #707885;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+#LoginSignup h5
+{
+    font-weight: 400;
+    font-size: 20px;
+}
+#LoginSignup h5 span
+{
+    cursor: pointer;
+    color: blue;
+}
+#LoginSignup .btn
+{
+    background-color: transparent;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 30px;
+}

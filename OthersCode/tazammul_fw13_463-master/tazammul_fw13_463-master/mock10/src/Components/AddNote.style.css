@@ -1,0 +1,19 @@
+#form{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid red; */
+    padding: 3%;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#form select
+{
+    font-size: 24px;
+    padding: 10px;
+}

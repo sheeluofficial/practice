@@ -1,0 +1,33 @@
+#LoginSignup
+{
+    width: 50%;
+    margin: auto;
+    margin-top:20vh;
+    padding: 50px;
+    box-sizing: border-box;
+}
+#LoginSignup .toggle
+{
+    display: grid;
+    cursor: pointer;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    color: black;
+}
+#LoginSignup .toggle > div{
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+}
+#LoginSignup .active
+{
+    background-color: aliceblue;
+    color: black;
+}
+#LoginSignup .form
+{
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}

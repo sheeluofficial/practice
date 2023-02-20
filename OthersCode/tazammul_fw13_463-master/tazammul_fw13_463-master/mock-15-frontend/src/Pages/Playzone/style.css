@@ -1,0 +1,84 @@
+#inner
+{
+    width: 1000px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#score
+{
+    background-color: white;
+    padding: 20px;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    border-radius: 20px;
+}
+#upper-cont
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #9ee8ff;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    overflow: hidden;
+    font-size: 20px;
+}
+#upper-cont div{
+    width: 100%;
+    padding: 20px;
+}
+#upper-cont > div:nth-child(1)
+{
+    background-color: black;
+    color: white;
+}
+#keyboard
+{
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #0BA5D3;
+    background-color: #262C2C;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#keyboard div
+{
+    width: 100%;
+    display: flex;
+    margin-bottom:15px;
+    justify-content: space-between;
+}
+#keyboard div:nth-child(5)
+{
+    margin-bottom: 0px !important;
+}
+
+#keyboard .btn
+{
+    width: 65px;
+    background-color: #2E3639;
+    color: #0BA5D3;
+    border: 1px solid #0BA5D3;
+    box-shadow: rgba(81, 70, 70, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px !important;
+   
+}
+
+#keyboard .btn:hover
+{
+   background-color: #21282a;
+    
+}
+#keyboard #enter
+{
+    width: 145px;
+}
+#keyboard #space
+{
+    width: 305px;
+}

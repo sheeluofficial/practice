@@ -1,0 +1,32 @@
+#Notes select
+{
+    font-size: 20px;
+    padding: 5px;
+    width: 40%;
+    margin: 30px;
+    margin-right: 10px;
+}
+#Notes .cards-cont{
+    border: 1px solid grey;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    gap: 10px;
+}
+#Notes .card 
+{
+    position: relative;
+}
+#Notes .card .btns
+{
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#Notes .cards-cont > div{
+    border: 2px solid black;
+    overflow: hidden;
+}

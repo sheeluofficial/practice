@@ -1,0 +1,37 @@
+#Navbar
+{
+    background-color: teal;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 20px;
+    
+}
+#login-page
+{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    width: 40%;
+    margin: auto;
+    margin-top: 150px;
+}
+#login-page h1
+{   
+    padding: 30px;
+    font-size: 4vw;
+}
+.otp
+{
+    display:flex;
+    gap:10px;
+    margin-top:40%;
+    padding:0px 30px
+}
+#Cart
+{
+    margin-top: 50px;
+}

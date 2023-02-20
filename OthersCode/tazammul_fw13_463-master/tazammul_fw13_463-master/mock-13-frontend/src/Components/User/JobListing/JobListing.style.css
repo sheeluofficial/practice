@@ -1,0 +1,49 @@
+#job-listing
+{
+    width: 100%;
+    padding-top: 120px;
+    box-sizing: border-box;
+    background-color: #F3F6F8;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+#job-listing #jobs
+{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    row-gap: 50px;
+    justify-content: space-between;
+}
+#job-listing #jobs .card
+{
+    background-color: white;
+    position: relative;
+    text-align: left;
+    padding: 30px;
+    padding-top: 0px;
+}
+#job-listing #jobs .card  >p{
+    color: grey;
+}
+#job-listing #jobs .card img
+{
+    height: 50px;
+    margin-top: -25px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+#job-listing #jobs .card  >div{
+    color: grey;
+}
+#job-listing #jobs .card  >h3{
+    font-size: 24px;
+    margin: 14px 0px;
+}
+
+#job-listing #jobs .card  >h4{
+    color: blue;
+    padding-top: 10px;
+    font-size: 12px;
+}

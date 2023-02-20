@@ -1,0 +1,16 @@
+#nav-cont{
+    display:flex;
+    justify-content: space-evenly;
+    gap:30px;
+    padding-right:30px;
+    border:2px solid gray;
+    box-sizing:border-box;
+    color: maroon;
+}
+#nav-cont h1
+{
+    cursor: pointer;
+    border: 1px solid grey;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}

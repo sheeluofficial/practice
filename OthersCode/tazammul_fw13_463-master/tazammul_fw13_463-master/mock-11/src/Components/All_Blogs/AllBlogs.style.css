@@ -1,0 +1,51 @@
+#AllBlogs
+{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+#AllBlogs .filter
+{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+#AllBlogs #blogs-cont
+{
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    justify-content: space-between;
+    row-gap: 20px;
+}
+#AllBlogs #blogs-cont .card
+{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#AllBlogs #blogs-cont .card > div:nth-child(1)
+{
+    object-fit:contain;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+#AllBlogs #blogs-cont .card > div:nth-child(2)
+{
+    padding: 10px;
+    box-sizing: border-box;
+}
+#AllBlogs #blogs-cont .card > div:nth-child(2) h3{
+    color: grey;
+    font-weight: 400;
+    text-align: left;
+}
+#AllBlogs #blogs-cont .card > div:nth-child(2) span
+{
+    color: maroon;
+    font-weight: bold;
+}
+#AllBlogs #blogs-cont .card > div:nth-child(2) p{
+    text-align: justify;
+}
