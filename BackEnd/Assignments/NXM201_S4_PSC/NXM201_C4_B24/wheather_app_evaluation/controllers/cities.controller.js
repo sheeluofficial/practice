@@ -9,8 +9,9 @@ const getCityData = async (req, res) => {
   try {
     const city = req.params.city || req.preferred_city;
 
-    const isCityInCache = await redisClientisClient.get(city);
+    const isCityInCache = await redisClient.get(city);
     // If the city is already in cache
+
     if (isCityInCache) return res.status(200).send(isCityInCache);
     const response = await axios.get(
       `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`
