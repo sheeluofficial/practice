@@ -5,14 +5,14 @@ export const RESET_COUNT = "RESET_COUNT";
 
 //ACTION CREATOR
 
-export const increaseCount = (payload)=>{
+export const increaseCount = (payload=1)=>{
     return {type:INCREASE_COUNT,payload}
 }
-export const decreaseCount = (payload)=>{
+export const decreaseCount = (payload=1)=>{
     return {type:DECREASE_COUNT,payload}
 }
 export const resetCount = ()=>{
-    return {type:DECREASE_COUNT}
+    return {type:RESET_COUNT}
 }
 
 
