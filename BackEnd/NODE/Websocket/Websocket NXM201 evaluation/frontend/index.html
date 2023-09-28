@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin side</title>
+    <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+    
+    
+    <form id="score-form">
+        <h1>Enter Score</h1>
+        <div id="show-msg"></div>
+        <div>
+            <label for="con1">Enter 1st Country</label>
+            <input id="con1" type="text" name="con1" placeholder="Enter country1" required>
+        </div>
+        <div>
+            <label for="con2">Enter 2nd Country</label>
+            <input id="con2" type="text" name="con2" placeholder="Enter country2" required>
+        </div>
+        <div>
+            <label for="livescore">Enter Score</label>
+            <input id="livescore"  type="number" name="livescore" placeholder="enter score" required>
+        </div>
+        <div>
+            <label for="wickets">Enter Wickets</label>
+            <input id="wickets" type="number" name="Wickets" placeholder="enter wicket" required>
+            
+        </div>
+        <div>
+            <label for="overs">Enter Overs</label>
+            <input id="overs" type="number" name="overs" placeholder="enter overs" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form id="more-details">
+        <div id="show-more"></div>
+        <h1>Enter Details of Match</h1>
+        <div>
+            <label for="batsman1">Batsman1</label>
+            <input id="bat1" type="text" name="batsman1" placeholder="enter name of 1st batsman" required>
+        </div>
+        <div>
+            <label for="batsman2">Batsman2</label>
+            <input id="bat2" type="text" name="batsman2" placeholder="enter name of 2nd batsman" required>
+        </div>
+        <div>
+            <label for="bowler">Bowler</label>
+            <input id="bowler" type="text" name="bowler" placeholder="enter name of 1st bowler" required>
+        </div>
+        <button type="submit">update</button>
+    </form>
+
+
+
+</body>
+<script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous">
+</script>
+<script src="./index.js"></script>
+</html>
